@@ -40,6 +40,7 @@ public class MongoTestController {
         mgtest.setName("ceshi2");
         mtdao.updateTest(mgtest);
         System.out.println("test3 is " + mgtest);
+        System.out.println("test03分支测试");
     }
 
     @GetMapping(value = "/test4")
