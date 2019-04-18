@@ -46,5 +46,6 @@ public class MongoTestController {
     @GetMapping(value = "/test4")
     public void deleteTestById() {
         mtdao.deleteTestById(11);
+        System.out.println("test04分支测试");
     }
 }
