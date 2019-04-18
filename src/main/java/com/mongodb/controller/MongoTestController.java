@@ -28,6 +28,7 @@ public class MongoTestController {
     public MongoTest findTestByName() {
         MongoTest mgtest = mtdao.findTestByName("ceshi");
         System.out.println("mgtest is " + mgtest);
+        System.out.println("test02分支测试");
         return mgtest;
     }
 
