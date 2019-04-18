@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+      #uri=mongodb://name:pass@localhost:27017/test
+      #如果要配置多个数据库，则中间用","分割，例如
+      #uri=mongodb://192.168.1.1:20000,192.168.1.2:20000,192.168.252.12:20000/test
+
+server:
+  port: 1010
