@@ -21,7 +21,6 @@ public class MongoTestController {
         mgtest.setAge(33);
         mgtest.setName("ceshi");
         mtdao.saveTest(mgtest);
-        System.out.println("test1");
     }
 
     @GetMapping(value = "/test2")
