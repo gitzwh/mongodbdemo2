@@ -21,14 +21,12 @@ public class MongoTestController {
         mgtest.setAge(33);
         mgtest.setName("ceshi");
         mtdao.saveTest(mgtest);
-        System.out.println("test01分支测试");
     }
 
     @GetMapping(value = "/test2")
     public MongoTest findTestByName() {
         MongoTest mgtest = mtdao.findTestByName("ceshi");
         System.out.println("mgtest is " + mgtest);
-        System.out.println("test02分支测试");
         return mgtest;
     }
 
@@ -40,12 +38,10 @@ public class MongoTestController {
         mgtest.setName("ceshi2");
         mtdao.updateTest(mgtest);
         System.out.println("test3 is " + mgtest);
-        System.out.println("test03分支测试");
     }
 
     @GetMapping(value = "/test4")
     public void deleteTestById() {
         mtdao.deleteTestById(11);
-        System.out.println("test04分支测试");
     }
 }
